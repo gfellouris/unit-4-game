@@ -4,11 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Added a link to our external stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
@@ -58,16 +65,16 @@
         <!-- START: GEM Buttons  -->
         <div class="row">
             <div class="col-md-2">
-                <img alt="Gem Stone 1" class="gemImage" src="assets/images/1.jpg">
+                <img id="gem-1" alt="Gem Stone 1" class="gemImage gem" src="assets/images/1.jpg">
             </div>
             <div class="col-md-2">
-                <img alt="Gem Stone 2" class="gemImage" src="assets/images/2.jpg">
+                <img id="gem-2" alt="Gem Stone 2" class="gemImage gem" src="assets/images/2.jpg">
             </div>
             <div class="col-md-2">
-                <img alt="Gem Stone 3" class="gemImage" src="assets/images/3.jpg">
+                <img id="gem-3" alt="Gem Stone 3" class="gemImage gem" src="assets/images/3.jpg">
             </div>
             <div class="col-md-2">
-                <img alt="Gem Stone 4" class="gemImage" src="assets/images/4.jpg">
+                <img id="gem-4" alt="Gem Stone 4" class="gemImage gem" src="assets/images/4.jpg">
             </div>
         </div>
         <!-- END: GEM Buttons -->
@@ -90,6 +97,8 @@
 
     </div>
     <!-- END: Bootstrap Grid System -->
+
+    <script src="assets/javascript/game.js"></script>
 
 </body>
 

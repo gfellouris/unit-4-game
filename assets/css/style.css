@@ -14,11 +14,30 @@ body {
   margin: 4rem 0;
 }
 
+/* Custom classes */
+.gemImage {
+    padding: 2px;
+    height: 100px;
+    width: 100px;
+}
+/* panel styles */
 .panel {
   border-radius: 0.3rem;
   padding: 1rem;
   margin-bottom: 1rem;
+}
+.panel-yellow {
   background-color: #fef0b2;
   color: #ffbd00;
   /* opacity: 0.6; */
 }
+
+.panel-blue {
+  background-color: #ddedff;
+  color: #0087ff;
+}
+
+.panel-purple {
+    background-color: #DFCCFF;
+    color: #7F51F4;
+  }

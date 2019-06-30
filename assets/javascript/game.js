@@ -1,11 +1,13 @@
   $(document).ready(function () {
     
+    // Variables
+    var totalScore = 0;
+
     $(".gem").on("mouseover", function () {
         $(this).css("border","10px solid lightgreen");
     });
 
     $(".gem").on("click", function () {
-alert("you click a gem!");
 
     //   if (opCheck) { // if an operate entered and we have a first number
     //     secondNum += $(this).val();
@@ -16,6 +18,10 @@ alert("you click a gem!");
     //     $("#first-number").html(firstNum);
     //     firstNumCheck = true;
     //   }
+    totalScore = totalScore + parseInt($(this).attr("value"));
+    console.log("Gem value = " + $(this).attr("value"));
+    console.log("Total Score = " + totalScore);
+    $("#totalScore").html(totalScore);
     });
 
 

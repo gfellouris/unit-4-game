@@ -12,6 +12,7 @@ $dark-purple: #7F51F4; */
 
 body {
   margin: 4rem 0;
+  background-image: url("../images/memphis-colorful.png");
 }
 
 /* Custom classes */
@@ -33,11 +34,16 @@ body {
 }
 
 .panel-blue {
-  background-color: #ddedff;
-  color: #0087ff;
+  background-color: lightblue;
+  color: darkblue;
 }
 
 .panel-purple {
     background-color: #DFCCFF;
     color: #7F51F4;
+  }
+
+  .panel-green {
+    background-color:lightgreen;
+    color: darkgreen;
   }

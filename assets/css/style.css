@@ -1,0 +1,24 @@
+/* $blue: #DDEDFF;
+$dark-blue: #0087FF;
+
+$yellow: #FEF0B2;
+$dark-yellow: #FFBD00; 
+
+$pink: #FAD2E1;
+$dark-pink: #F84F7F;
+
+$purple: #DFCCFF;
+$dark-purple: #7F51F4; */
+
+body {
+  margin: 4rem 0;
+}
+
+.panel {
+  border-radius: 0.3rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fef0b2;
+  color: #ffbd00;
+  /* opacity: 0.6; */
+}

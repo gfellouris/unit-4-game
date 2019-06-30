@@ -11,7 +11,7 @@
     * gems should be different types, different colors, aligned next to each other left to right
     * gems should all be the same size
     * Each crystal should have a random hidden value between 1 - 12.
-- [ ] Total score should be tracked in a seperate spaWhen the player clicks on a crystal, it will add a specific amount of points to the player's total score.  
+- [ ] When the player clicks on a crystal, it will add a specific amount of points to the player's total score.  
     * Your game will hide this amount until the player clicks a crystal.
     * When they do click one, update the player's score counter.
 - [ ] The player wins if their total score matches the random number from the beginning of the game.

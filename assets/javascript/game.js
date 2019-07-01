@@ -20,16 +20,6 @@ $(document).ready(function() {
     return Math.floor(Math.random() * 120) + 19;
   }
 
-  // Main logic
-  initGame();
-  $(".gem").on("mouseover", function() {
-    $(this).css("border", "10px solid lightgreen");
-  });
-
-  $(".gem").on("mouseout", function() {
-    $(this).css("border", "0px none none");
-  });
-
   function checkWinner(tNum, rNum) {
     if (tNum === rNum) {
       alert("You won!");
@@ -43,6 +33,16 @@ $(document).ready(function() {
       initGame();
     }
   }
+
+  // Main logic
+  initGame();
+  $(".gem").on("mouseover", function() {
+    $(this).css("border", "10px solid lightgreen");
+  });
+
+  $(".gem").on("mouseout", function() {
+    $(this).css("border", "0px none none");
+  });
 
   $(".gem").on("click", function() {
     totalScore = totalScore + parseInt($(this).attr("value"));

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // Variables
+  // Global Variables
   var totalScore = 0;
   var randomNum = 0;
   var totalWins = 0;
@@ -19,8 +19,6 @@ $(document).ready(function() {
   function pickNum(min, max) {
     // * The random number shown at the start of the game should be between 19 - 120.
     // return Math.floor(Math.random() * 120) + 19;
-    // var min = 19;
-    // var max = 120;
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
@@ -28,7 +26,6 @@ $(document).ready(function() {
     // Each crystal should have a random hidden value between 1 - 12.
     for (x = 1; x < 5; x++) {
       var gemVal = Math.floor(Math.random() * (max - min + 1)) + min;
-
       $("#gem-" + x).attr("src", "assets/images/" + gemVal + ".jpg");
       $("#gem-" + x).attr("value", gemVal);
     }
@@ -67,7 +64,7 @@ $(document).ready(function() {
   $(".gem").on("click", function() {
     $(this).css("border", "5px solid lightyellow");
     totalScore = totalScore + parseInt($(this).attr("value"));
-    console.log("Gem value = " + $(this).attr("value"));
+    // console.log("Gem value = " + $(this).attr("value"));
     // console.log("Total Score = " + totalScore);
     $("#totalScore").html("<h4>Total Score:</h4>" + totalScore);
     checkWinner(totalScore, randomNum);

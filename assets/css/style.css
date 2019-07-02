@@ -9,41 +9,65 @@ $dark-pink: #F84F7F;
 
 $purple: #DFCCFF;
 $dark-purple: #7F51F4; */
-
+/* #F5F5E7, 
+#EDEFE0, 
+#E3E8DE, 
+#E4E3DB, 
+#D0D8D7, 
+#B5CCD1, 
+#B5B3BA, ]
+#627594 */
 body {
   margin: 4rem 0;
   background-image: url("../images/memphis-colorful.png");
 }
 
+/* Custom IDs */
+#gameBanner {
+  font-family: "Leckerli One", cursive;
+  font-size: 36px;
+}
+
 /* Custom classes */
+.jumbotron {
+  background-color: #e3e8de;
+}
+
 .gemImage {
-    padding: 2px;
-    height: 100px;
-    width: 100px;
+  padding: 2px;
+  height: 100px;
+  width: 100px;
 }
 /* panel styles */
 .panel {
   border-radius: 0.3rem;
   padding: 1rem;
   margin-bottom: 1rem;
+  color: #627594;
 }
-.panel-yellow {
-  background-color: #fef0b2;
-  color: #ffbd00;
+
+.panel-container {
+  background-color: #e3e8de;
+  border: 1px solid #d0d8d7;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
   /* opacity: 0.6; */
 }
 
-.panel-blue {
-  background-color: lightblue;
-  color: darkblue;
+.panel-instructions {
+  background-color: #f5f5e7;
+  /* opacity: 0.6; */
 }
 
-.panel-purple {
-    background-color: #DFCCFF;
-    color: #7F51F4;
-  }
+.panel-randomNum {
+  background-color: #b5ccd1;
+}
 
-  .panel-green {
-    background-color:lightgreen;
-    color: darkgreen;
-  }
+.panel-totalScore {
+  background-color: #b5b3ba;
+}
+
+.panel-scoreTracker {
+  background-color: #b5ccd1;
+}

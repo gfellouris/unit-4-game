@@ -12,6 +12,8 @@
 
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
     <!-- Added a link to our external stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -22,82 +24,77 @@
 
     <!-- START: Jumbotron header -->
     <div class="container">
-        <div class="jumbotron bg-warning">
+        <div class="jumbotron">
             <div id="gameBanner">
-                Crystals Collector
+                <i class="far fa-gem"></i>Crystals Collector
             </div>
         </div>
     </div>
     <!-- END: Jumbotron header -->
 
-    <!-- START: Bootstrap Grid System -->
-    <div class="container">
-        <!-- START: Game Instructions -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel panel-yellow">
-                    <p>You will be given a random number at the start of the game.</p>
-                    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points
-                        to
-                        your total score.</p>
-                    <p>You win the game by matching your total score to random number, you lose the game if your total
-                        score
-                        goes above the random number.</p>
-                    <p>The value of each crystal is hidden from you until you click on it.</p>
-                    <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    <div class="container panel-container">
+        <!-- START: Bootstrap Grid System -->
+        <div class="container">
+            <!-- START: Game Instructions -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-instructions">
+                        <p>You will be given a random number at the start of the game.</p>
+                        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of
+                            points
+                            to
+                            your total score.</p>
+                        <p>You win the game by matching your total score to random number, you lose the game if your
+                            total
+                            score
+                            goes above the random number.</p>
+                        <p>The value of each crystal is hidden from you until you click on it.</p>
+                        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- END: Game Instructions -->
+            <!-- END: Game Instructions -->
 
-        <!-- START: Total Score & Wins and Losses tracker  -->
-        <div class="row">
-            <div id="randomNum" class="col-md-3 panel panel-green">
-                39
+            <!-- START: Total Score & Wins and Losses tracker  -->
+            <div class="row">
+                <div id="randomNum" class="col-md-3 panel panel-randomNum">
+                    MAGIC#:
+                </div>
+                <div class="col-md-3 panel panel-totalScore">
+                    <p>Wins: <span id="totalWins">0</span></p>
+                    <p>Losses: <span id="totalLosses">0</span></p>
+                </div>
             </div>
-            <div class="col-md-3 panel panel-blue">
-                <p>Wins: <span id="totalWins">0</span></p>
-                <p>Losses: <span id="totalLosses">0</span></p>
-            </div>
-        </div>
-        <!-- END: Total Score & Wins and Losses tracker -->
+            <!-- END: Total Score & Wins and Losses tracker -->
 
-        <!-- START: GEM Buttons  -->
-        <div class="row">
-            <div class="col-md-2">
-                <img id="gem-1" alt="Gem Stone 1" class="gemImage gem" value="1" src="assets/images/1.jpg">
+            <!-- START: GEM Buttons  -->
+            <div class="row">
+                <div class="col-md-2">
+                    <img id="gem-1" alt="Gem Stone 1" class="gemImage gem" value="1" src="assets/images/1.jpg">
+                </div>
+                <div class="col-md-2">
+                    <img id="gem-2" alt="Gem Stone 2" class="gemImage gem" value="2" src="assets/images/2.jpg">
+                </div>
+                <div class="col-md-2">
+                    <img id="gem-3" alt="Gem Stone 3" class="gemImage gem" value="3" src="assets/images/3.jpg">
+                </div>
+                <div class="col-md-2">
+                    <img id="gem-4" alt="Gem Stone 4" class="gemImage gem" value="10" src="assets/images/4.jpg">
+                </div>
             </div>
-            <div class="col-md-2">
-                <img id="gem-2" alt="Gem Stone 2" class="gemImage gem" value="2" src="assets/images/2.jpg">
-            </div>
-            <div class="col-md-2">
-                <img id="gem-3" alt="Gem Stone 3" class="gemImage gem" value="3" src="assets/images/3.jpg">
-            </div>
-            <div class="col-md-2">
-                <img id="gem-4" alt="Gem Stone 4" class="gemImage gem" value="10" src="assets/images/4.jpg">
-            </div>
-        </div>
-        <!-- END: GEM Buttons -->
+            <!-- END: GEM Buttons -->
 
-        <!-- START: Total Score header  -->
-        <div class="row">
-            <div class="col-md-4 panel panel-purple">
-                <p>Your total score is:</p>
+            <!-- START: Total score value  -->
+            <div class="row">
+                <div id="totalScore" class="col-md-4 panel panel-totalScore">
+                    Total Score:
+                </div>
             </div>
-        </div>
-        <!-- END: Total Score header -->
+            <!-- END: Total score value -->
 
-        <!-- START: Total score value  -->
-        <div class="row">
-            <div id="totalScore" class="col-md-4 panel panel-purple">
-                0
-            </div>
         </div>
-        <!-- END: Total score value -->
-
+        <!-- END: Bootstrap Grid System -->
     </div>
-    <!-- END: Bootstrap Grid System -->
-
     <script src="assets/javascript/game.js"></script>
 
 </body>

@@ -11,13 +11,16 @@ $(document).ready(function() {
     totalScore = 0;
     randomNum = 0;
     randomNum = pickNum();
-    $("#randomNum").html(randomNum);
-    $("#totalScore").html("0");
+    $("#randomNum").html("MAGIC#:<br>" + randomNum);
+    $("#totalScore").html("Total Score:<br>" + totalScore);
   }
 
   function pickNum() {
     // * The random number shown at the start of the game should be between 19 - 120.
-    return Math.floor(Math.random() * 120) + 19;
+    // return Math.floor(Math.random() * 120) + 19;
+    var min = 19;
+    var max = 120;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
   function checkWinner(tNum, rNum) {
@@ -48,7 +51,7 @@ $(document).ready(function() {
     totalScore = totalScore + parseInt($(this).attr("value"));
     console.log("Gem value = " + $(this).attr("value"));
     console.log("Total Score = " + totalScore);
-    $("#totalScore").html(totalScore);
+    $("#totalScore").html("Total Score:<br>" + totalScore);
     checkWinner(totalScore, randomNum);
   });
 });

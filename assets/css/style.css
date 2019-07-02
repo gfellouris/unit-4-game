@@ -1,22 +1,3 @@
-/* $blue: #DDEDFF;
-$dark-blue: #0087FF;
-
-$yellow: #FEF0B2;
-$dark-yellow: #FFBD00; 
-
-$pink: #FAD2E1;
-$dark-pink: #F84F7F;
-
-$purple: #DFCCFF;
-$dark-purple: #7F51F4; */
-/* #F5F5E7, 
-#EDEFE0, 
-#E3E8DE, 
-#E4E3DB, 
-#D0D8D7, 
-#B5CCD1, 
-#B5B3BA, ]
-#627594 */
 body {
   margin: 4rem 0;
   background-image: url("../images/memphis-colorful.png");
@@ -26,6 +7,7 @@ body {
 #gameBanner {
   font-family: "Leckerli One", cursive;
   font-size: 36px;
+  text-align: center;
 }
 
 /* Custom classes */
@@ -46,6 +28,13 @@ body {
   color: #627594;
 }
 
+.panel-images {
+  margin: 10px;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+
 .panel-container {
   background-color: #e3e8de;
   border: 1px solid #d0d8d7;
@@ -62,12 +51,15 @@ body {
 
 .panel-randomNum {
   background-color: #b5ccd1;
+  text-align: center;
 }
 
 .panel-totalScore {
   background-color: #b5b3ba;
+  text-align: center;
 }
 
 .panel-scoreTracker {
   background-color: #b5ccd1;
+  text-align: center;
 }

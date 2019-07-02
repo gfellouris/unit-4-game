@@ -13,7 +13,8 @@
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
     <!-- Added a link to our external stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -26,7 +27,7 @@
     <div class="container">
         <div class="jumbotron">
             <div id="gameBanner">
-                <i class="far fa-gem"></i>Crystals Collector
+                    <h1><i class="far fa-gem"></i>Crystals Collector</h1>
             </div>
         </div>
     </div>
@@ -38,6 +39,7 @@
             <!-- START: Game Instructions -->
             <div class="row">
                 <div class="col-md-12">
+                    <i id="help" class="fas fa-question-circle"></i>
                     <div class="panel panel-instructions">
                         <p>You will be given a random number at the start of the game.</p>
                         <p>There are four crystals below. By clicking on a crystal you will add a specific amount of
@@ -57,28 +59,24 @@
 
             <!-- START: Total Score & Wins and Losses tracker  -->
             <div class="row">
-                <div id="randomNum" class="col-md-3 panel panel-randomNum">
-                    MAGIC#:
-                </div>
-                <div class="col-md-3 panel panel-totalScore">
-                    <p>Wins: <span id="totalWins">0</span></p>
-                    <p>Losses: <span id="totalLosses">0</span></p>
+                <div id="randomNum" class="col-md-12 panel panel-randomNum">
+                    <h4>MAGIC#:</h4>
                 </div>
             </div>
             <!-- END: Total Score & Wins and Losses tracker -->
 
             <!-- START: GEM Buttons  -->
-            <div class="row">
-                <div class="col-md-2">
+            <div class="row panel-images">
+                <div class="col-md-3">
                     <img id="gem-1" alt="Gem Stone 1" class="gemImage gem" value="1" src="assets/images/1.jpg">
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <img id="gem-2" alt="Gem Stone 2" class="gemImage gem" value="2" src="assets/images/2.jpg">
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <img id="gem-3" alt="Gem Stone 3" class="gemImage gem" value="3" src="assets/images/3.jpg">
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <img id="gem-4" alt="Gem Stone 4" class="gemImage gem" value="10" src="assets/images/4.jpg">
                 </div>
             </div>
@@ -86,8 +84,12 @@
 
             <!-- START: Total score value  -->
             <div class="row">
-                <div id="totalScore" class="col-md-4 panel panel-totalScore">
+                <div id="totalScore" class="col-md-6 panel panel-totalScore">
                     Total Score:
+                </div>
+                <div class="col-md-6 panel panel-totalScore">
+                    <h4>Wins: <span id="totalWins">0</span></h4>
+                    <h4>Losses: <span id="totalLosses">0</span></h4>
                 </div>
             </div>
             <!-- END: Total score value -->

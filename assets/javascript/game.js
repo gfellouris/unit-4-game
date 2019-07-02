@@ -27,7 +27,9 @@ $(document).ready(function() {
   function randomizeGems(min, max) {
     // Each crystal should have a random hidden value between 1 - 12.
     for (x=1 ; x < 5; x++) {
-      var gemVal = Math.floor(Math.random() * (max - min + 1)) + min
+      var gemVal = Math.floor(Math.random() * (max - min + 1)) + min;
+      
+      $("#gem-" + x).attr("src","assets/images/" + gemVal + ".jpg");
       $("#gem-" + x).attr("value",gemVal);
     }
   }

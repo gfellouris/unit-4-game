@@ -8,6 +8,7 @@ body {
   font-family: "Leckerli One", cursive;
   font-size: 36px;
   text-align: center;
+  color: #627594;
 }
 
 #help {
@@ -45,12 +46,10 @@ body {
   margin: auto;
   padding: 10px;
   border-radius: 10px;
-  /* opacity: 0.6; */
 }
 
 .panel-instructions {
   background-color: #f5f5e7;
-  /* opacity: 0.6; */
 }
 
 .panel-randomNum {

@@ -48,8 +48,12 @@ $(document).ready(function() {
 
   // Main logic
   initGame();
-  $(".gem").on("mouseover", function() {
+  $(".gem").on("hover", function() {
     $(this).css("border", "2px solid #627594");
+  });
+
+  $("#help").click(function(){
+    $("#instructions").toggle();
   });
 
   $(".gem").on("mouseout", function() {

@@ -10,8 +10,8 @@ $(document).ready(function() {
     // initialize game board and variables
     totalScore = 0;
     randomNum = 0;
-    randomNum = pickNum(19,120);
-    randomizeGems(1,12);
+    randomNum = pickNum(19, 120);
+    randomizeGems(1, 12);
     $("#randomNum").html("<h4>MAGIC#:</h4>" + randomNum);
     $("#totalScore").html("<h4>Total Score:</h4>" + totalScore);
   }
@@ -26,11 +26,11 @@ $(document).ready(function() {
 
   function randomizeGems(min, max) {
     // Each crystal should have a random hidden value between 1 - 12.
-    for (x=1 ; x < 5; x++) {
+    for (x = 1; x < 5; x++) {
       var gemVal = Math.floor(Math.random() * (max - min + 1)) + min;
-      
-      $("#gem-" + x).attr("src","assets/images/" + gemVal + ".jpg");
-      $("#gem-" + x).attr("value",gemVal);
+
+      $("#gem-" + x).attr("src", "assets/images/" + gemVal + ".jpg");
+      $("#gem-" + x).attr("value", gemVal);
     }
   }
 
@@ -50,19 +50,22 @@ $(document).ready(function() {
 
   // Main logic
   initGame();
-  $(".gem").on("hover", function() {
-    $(this).css("border", "2px solid #627594");
-  });
 
-  $("#help").click(function(){
+  $("#help").click(function() {
     $("#instructions").toggle();
   });
 
-  $(".gem").on("mouseout", function() {
-    $(this).css("border", "0px none none");
-  });
+  $(".gem").hover(
+    function() {
+      $(this).css("border", "5px solid #B5B3BA");
+    },
+    function() {
+      $(this).css("border", "5px solid #D0D8D7");
+    }
+  );
 
   $(".gem").on("click", function() {
+    $(this).css("border", "5px solid lightyellow");
     totalScore = totalScore + parseInt($(this).attr("value"));
     console.log("Gem value = " + $(this).attr("value"));
     // console.log("Total Score = " + totalScore);
